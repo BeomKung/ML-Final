@@ -9,7 +9,7 @@ from sklearn.decomposition import PCA
 
 # print(pca.components_.shape)
 
-km = KMeans(n_clusters=4, random_state=42)
+km = KMeans(n_clusters=4, random_state=42, n_init=10)
 km.fit(image)
 
 print(km.labels_)
