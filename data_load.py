@@ -17,7 +17,7 @@ image_list_numpy = []
 
 for i in image_list:
     img = Image.open(dir_ + i)
-    img_resize = img.resize((32, 32))
+    img_resize = img.resize((256, 256))
     image_array = np.array(img_resize)
     image_list_numpy.append(image_array)
 
@@ -25,7 +25,7 @@ for i in image_list:
 image_numpy = np.array(image_list_numpy)
 print(image_numpy.shape)    # (1142(개 데이터), 1134(가로 픽셀), 1134(세로 픽셀), 3(RGB))
 
-image_2D = image_numpy.reshape(-1, 32 * 32)
+image_2D = image_numpy.reshape(-1, 256 * 256)
 
-# plt.imshow(image_numpy[1], cmap='gray')
-# plt.show()
+plt.imshow(image_numpy[1], cmap='gray')
+plt.show()
