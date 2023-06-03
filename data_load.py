@@ -2,6 +2,7 @@
 
 import os
 import numpy as np
+import matplotlib.pyplot as plt
 
 from PIL import Image
 
@@ -23,4 +24,7 @@ for i in image_list:
 image_numpy = np.array(image_list_numpy)
 print(image_numpy.shape)    # (1142(개 데이터), 1134(가로 픽셀), 1134(세로 픽셀), 3(RGB))
 
-image_2D = image_numpy.reshape(-1, 1134*1134)
+image_2D = image_numpy.reshape(-1, 1134 * 1134)
+
+# plt.imshow(image_numpy[1], cmap='gray')
+# plt.show()
