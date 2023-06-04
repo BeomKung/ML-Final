@@ -28,12 +28,12 @@ for cluster_id in range(4):
     cluster_directory = os.path.join(output_dir_, f'cluster_{cluster_id}')
     os.makedirs(cluster_directory, exist_ok=True)
 
-for idx, file in enumerate(3426):
+for idx, file in enumerate(1142):
     image_path = os.path.join(dir_, file)
     cluster_id = cluster_labels[idx]
     cluster_directory = os.path.join(output_dir_, f'cluster_{cluster_id}')
     output_path = os.path.join(cluster_directory, file)
-    
+
     # 이미지 파일 복사
     os.copy(image_path, output_path)
 
