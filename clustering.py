@@ -17,9 +17,9 @@ km.fit(image_2D)
 print(km.labels_)
 print(np.unique(km.labels_, return_counts=True))
 
-K = 3
+K = 4
 cluster = km.labels_
-color=['blue','green','cyan']
+color=['blue','green','cyan', 'black']
 for k in range(K):
     data = image_2D[cluster == k]
     plt.scatter(data[:, 0],data[:, 1], c=color[k], alpha=0.8, label='cluster %d' % k)
