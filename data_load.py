@@ -17,7 +17,8 @@ image_list_numpy = []
 
 for i in image_list:
     img = Image.open(dir_ + i)
-    img_crop = img.crop((167, 167, 900, 900))
+    img_bw = img.convert('L')
+    img_crop = img_bw.crop((167, 167, 900, 900))
     img_resize = img_crop.resize((512, 512))
     image_array = np.array(img_resize)
     image_list_numpy.append(image_array)

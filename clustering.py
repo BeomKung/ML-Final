@@ -33,20 +33,20 @@ print(np.unique(km.labels_, return_counts=True))
 # data_2 = np.array()
 # data_3 = np.array()
 
-# def draw_clusters(arr, ratio=1):
-#     n = len(arr)
-#     rows = int(np.ceil(n / 10))
-#     cols = n if rows < 2 else 10
-#     fig, axs = plt.subplots(rows, cols, figsize=(cols * ratio, rows * ratio), squeeze=False)
+def draw_clusters(arr, ratio=1):
+    n = len(arr)
+    rows = int(np.ceil(n / 10))
+    cols = n if rows < 2 else 10
+    fig, axs = plt.subplots(rows, cols, figsize=(cols * ratio, rows * ratio), squeeze=False)
     
-#     for i in range(rows):
-#         for j in range(cols):
-#             if i * 10 + j < n:
-#                 axs[i, j].imshow(arr[i * 10 + j])
-#             axs[i, j].axis('off')
-#     plt.show()
+    for i in range(rows):
+        for j in range(cols):
+            if i * 10 + j < n:
+                axs[i, j].imshow(arr[i * 10 + j])
+            axs[i, j].axis('off')
+    plt.show()
 
-# draw_clusters(image_numpy[km.labels_==0])
-# draw_clusters(image_numpy[km.labels_==1])
-# draw_clusters(image_numpy[km.labels_==2])
-# draw_clusters(image_numpy[km.labels_==3])
+draw_clusters(image_numpy[km.labels_==0])
+draw_clusters(image_numpy[km.labels_==1])
+draw_clusters(image_numpy[km.labels_==2])
+draw_clusters(image_numpy[km.labels_==3])
