@@ -17,16 +17,16 @@ km.fit(image_2D)
 print(km.labels_)
 print(np.unique(km.labels_, return_counts=True))
 
-inertia = []
-for k in range(2, 10):
-    km = KMeans(n_clusters=k, random_state=42, n_init=10)
-    km.fit(image_2D)
-    inertia.append(km.inertia_)
+# inertia = []
+# for k in range(2, 10):
+#     km = KMeans(n_clusters=k, random_state=42, n_init=10)
+#     km.fit(image_2D)
+#     inertia.append(km.inertia_)
 
-plt.plot(range(2, 10), inertia)
-plt.xlabel('k')
-plt.ylabel('inertia')
-plt.show()
+# plt.plot(range(2, 10), inertia)
+# plt.xlabel('k')
+# plt.ylabel('inertia')
+# plt.show()
 
 # data_0 = np.array()
 # data_1 = np.array()
