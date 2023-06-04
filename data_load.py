@@ -23,10 +23,10 @@ for i in image_list:
 
 # 리스트 전체 변환
 image_numpy = np.array(image_list_numpy)
-print(image_numpy.shape)    # (1142(개 데이터), 1134(가로 픽셀), 1134(세로 픽셀), 3(RGB))
+print(image_numpy.shape)    # (1142(개 데이터), 256(가로 픽셀), 256(세로 픽셀), 3(RGB))
 
 image_2D = image_numpy.reshape(-1, 256 * 256)
-print(image_2D.shape)
+print(image_2D.shape)       # (3426(개 데이터), 65536(256 * 256))
 
 # plt.imshow(image_numpy[1], cmap='gray')
 # plt.show()
