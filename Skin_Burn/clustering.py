@@ -1,3 +1,5 @@
+# Skin_Burn
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -9,7 +11,7 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 
 image_ext_ = ".jpg"
-output_dir_ = '../Final_Project_Data/After'
+output_dir_ = '../../Final_Project_Data/After'
 
 # pca = PCA(n_components=500)
 # pca.fit(image)

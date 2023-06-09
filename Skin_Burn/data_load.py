@@ -1,3 +1,4 @@
+# Skin_Burn
 # Data Load
 
 import os
@@ -7,7 +8,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 # 데이터 불러오기
-dir_ = '../Final_Project_Data/Image_All/'
+dir_ = '../../Final_Project_Data/Image_All/'
 
 all_files = os.listdir(dir_)
 image_list = [img for img in all_files if img.endswith('.jpg')]
