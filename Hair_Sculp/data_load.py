@@ -5,10 +5,10 @@ import numpy as np
 
 from PIL import Image
 
-train_dir_ = '../../Final_Project_Data/Scalp_Image/Training/'
-valid_dir_ = '../../Final_Project_Data/Scalp_Image/Validation/'
-train_resize_dir_ = '../../Final_Project_Data/Scalp_Image_Resize/Train_Resize/'
-valid_resize_dir_ = '../../Final_Project_Data/Scalp_Image_Resize/Valid_Resize/'
+train_dir_ = 'C:/Users/User/MLproject/ML-Final_Project/Scalp_Image/Training/'
+valid_dir_ = 'C:/Users/User/MLproject/ML-Final_Project/Scalp_Image/Validation/'
+train_resize_dir_ = 'C:/Users/User/MLproject/ML-Final_Project/Scalp_Image_Resize/Train_Resize/'
+valid_resize_dir_ = 'C:/Users/User/MLproject/ML-Final_Project/Scalp_Image_Resize/Valid_Resize/'
 
 train_files = os.listdir(train_dir_)
 valid_files = os.listdir(valid_dir_)
